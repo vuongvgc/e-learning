@@ -15,7 +15,7 @@ import AdminCourses from "./pages/Admin/AdminCourses";
 import AdminUsers from "./pages/Admin/AdminUsers";
 import UserInfor from "./pages/User/UserInfor";
 import UserCourses from "./pages/User/UserCourses";
-
+import "./styles/main.scss";
 function App() {
   return (
     <BrowserRouter>
