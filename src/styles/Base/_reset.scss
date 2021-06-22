@@ -1,4 +1,19 @@
-//Reset Style 
-* {
-    color: red;
+// Reset Style 
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+// font 
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    @include styleText($fs-0, $fw-normal, $color-black-0)
 }
