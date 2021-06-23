@@ -1,0 +1,41 @@
+footer {
+    .footer__nav {
+        padding: $pd-2;
+        justify-content: space-around;
+        .footer__nav-item  {
+            padding: $pd-2;
+            .nav-link {
+                @include styleText($fs-1, $fw-normal, $color-blue)
+            }
+            .active__nav .nav-link {
+                font-weight: $fw-bold;
+            }
+        }
+        .footer__language {
+            text-align: right;
+            button {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .footer__copyright {
+        justify-content: space-between;
+        padding: $pd-3;
+        border-top: 1px solid $color-gray-6;
+        .footer__img {
+            padding: $pd-1;
+            img {
+                height: 4rem;
+            }
+           
+        }
+        .footer__policy {
+            text-align: right;
+            ul {
+                list-style-type: none;
+                justify-content: flex-end;
+            }
+            
+        }
+    }
+}

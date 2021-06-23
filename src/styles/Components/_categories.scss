@@ -1,0 +1,35 @@
+.categories{
+    margin-bottom: $mg-3;
+    h2 {
+        @include styleText($fs-3, $fw-bold, $color-black-0)
+    }
+    .categories__content {
+        justify-content: space-around;
+        align-items: baseline;
+        flex-wrap: wrap;
+        padding-left: $pd-1;
+        width: 95%;
+        margin: 0 auto;
+        .categories__box {
+            border: none;
+            padding: 0 3rem;
+        }
+        .categories__item {
+            border: 1px solid $color-gray-6;
+            align-items: baseline;
+            padding: $pd-1 $pd-2;
+            border: 1px solid $color-gray-2;
+            box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+            margin-bottom: $mg-2;
+            span {
+                
+                @include styleText($fs-0, $fw-normal, $color-black-light);
+            }
+            i {
+                padding-right: $pd-1;
+                @include styleText($fs-7, $fw-normal, $color-black-light)
+            }
+        }
+    }
+
+}

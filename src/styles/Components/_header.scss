@@ -1,0 +1,97 @@
+header {
+    // declaration styleText for all of header
+    .navbar {
+        @include styleText($fs-1, $fw-normal, $color-black-light);
+        .nav-link {
+          @include styleText($fs-1, $fw-normal, $color-black-light);
+        }
+    } 
+    
+}
+.header__left {
+    display: flex;
+    // flex-grow: Tang kich thuoc con. khi cha con cho trong
+    .navbar-brand {
+        display: block;
+        margin-right: $mg-3;
+        img {
+            width: 11rem;
+        }
+    }
+    .header__categories {
+        display: block;
+        margin-right: $mg-3;
+        align-self: center;
+        i{
+            margin-right: $mg-1;   
+        }
+    }
+    .header__form {
+        @include searchForm($color-gray-6)
+    }
+    .navbar-toggler {
+        color: $color-gray-4;
+        opacity: 1;
+    }
+}
+.header__right {
+    .navbar-nav {
+        align-items: baseline;
+        .nav__business {
+            margin-right: $mg-2;
+    
+        }
+        .nav__tech {
+            margin-right: $mg-2;
+    
+        }
+        .nav__cart {
+            padding: 0 $pd-2;
+            border-left: 1px solid $color-gray-3;
+        }
+    }
+    
+}
+
+
+// Responsive 
+.header__right {    
+    @include respond(tab-land) {
+        // code nay se dc gan vao @content
+        .nav__business,  .nav__tech {
+            display: none;
+        }
+        // chinh chieu dai bang bootstrap
+    }
+    @include respond(phone){
+        .udemy-btn-group {
+            display: none;
+        }
+        .nav__cart {
+            padding: 0 $pd-2;
+            border: none;
+            text-align: right;
+
+        }
+    }
+};
+.header__right .navbar-nav .nav__cart {
+    @include respond(phone){
+        .nav__cart {
+            padding: 0 $pd-1;
+            border: none;
+            text-align: right;
+
+        }
+    }
+};
+.header__left {
+    @include respond(phone){
+        justify-content: center;
+        .header__categories, .header__form{
+            display: none;
+        }
+        
+        
+    }
+}

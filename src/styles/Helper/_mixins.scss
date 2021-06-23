@@ -1,6 +1,198 @@
-// style text 
+// styleText 
 @mixin styleText($fs, $fw, $color) {
     font-size: $fs;
     font-weight: $fw;
-    color: $color
+    color: $color;
+}
+
+// button 
+@mixin styleBtn($bg, $bd-color, $bd-radius, $py, $px) {
+    background-color: $bg;
+    border: 1px solid $bd-color;
+    border-radius: $bd-radius;
+    padding: $py $px;
+}
+
+// hover button 
+@mixin hoverButton($bg-color, $bd-color, $color) {
+    background-color: $bg-color;
+    border-color: $bd-color;
+    color: $color;
+}
+
+// search form 
+@mixin searchForm($bg) {
+    background-color: $bg;
+    flex-grow: 1;
+
+    .input-group {
+        input {
+            padding: $pd-2 $pd-1;
+            background-color: #F2F3F5;
+            border: none;
+        }
+    }
+
+    .input-group-text {
+        color: $color-red-0;
+        font-size: 2rem;
+        padding: 0 1.5rem;
+        transition: all .2s;
+        background-color: #F2F3F5;
+        border: none;
+
+        &:hover {
+            background-color: $color-red-0;
+            color: $color-white-0;
+        }
+
+    }
+
+    @include respond(tab-port) {
+        .input-group-text {
+            font-size: 1rem;
+
+        }
+    }
+
+    @include respond(phone) {
+        .input-group-text {
+            font-size: .5rem;
+
+        }
+    }
+}
+
+// course item 
+@mixin courses__item() {
+    border: 1px solid $color-gray-5;
+    margin: $mg-0;
+    margin-right: $mg-0;
+
+    &:hover {
+        box-shadow: 1px 6px 4px 2px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1)
+    }
+
+    .courses__box {
+        box-shadow: 0 0 1px 1px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
+    }
+
+    .courses__detail {
+        padding: $pd-1;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: $mg-1;
+    }
+
+    h4 {
+        @include styleText($fs-0, $fw-bold, $color-black-0);
+        margin-bottom: $mg-1;
+    }
+
+    p {
+        @include styleText($fs-1, $fw-normal, $color-black-light);
+        margin-bottom: $mg-1;
+    }
+
+    .icon__star {
+        margin-bottom: $mg-1;
+
+        i {
+            color: $color-yellow;
+        }
+
+        .rate {
+            @include styleText($fs-1, $fw-bold, $color-black-0)
+        }
+
+        .courses__member {
+            @include styleText($fs-1, $fw-normal, $color-black-0)
+        }
+
+    }
+
+    .courses__price {
+        text-align: right;
+        padding: $pd-1;
+
+        del {
+            @include styleText($fs-1, $fw-normal, $color-black-0)
+        }
+
+        b {
+            @include styleText($fs-5, $fw-bold, $color-black-0)
+        }
+    }
+}
+
+// center text box 
+@mixin centerTextBox() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// responsive
+// @mixin responsive($screenName) {
+//     // kiem tra ten man hinh hop le 
+//     @if(map-has-key($map: $breakpoints , $key: $screenName)) {
+//         // $value chua gia tri man hinh lay duoc vd: 576px
+//         $value: map-get($map: $breakpoints, $key: $screenName);
+//         @media screen and (max-width: $value) {
+//             @content;
+//         }
+//     }@else {
+//         @warn 'Màn hình không hợp lệ'
+//     }
+// };
+
+// MEDIA QUERY MANAGER
+// 0 - 600px:      Phone
+// 600 - 900px:    Tablet portrait
+// 900 - 1200px:   Tablet landscape
+// [1200 - 1800] is where our normal styles apply
+// 1800px + :      Big desktop
+
+// $breakpoint arguement choices:
+// - phone
+// - tab-port
+// - tab-land
+// - big-desktop
+
+// 1em = 16px
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media only screen and (max-width: 48em) {
+            @content
+        }
+
+        ; //600px
+    }
+
+    @if $breakpoint==tab-port {
+        @media only screen and (max-width: 62em) {
+            @content
+        }
+
+        ; //992px
+    }
+
+    @if $breakpoint==tab-land {
+        @media only screen and (max-width: 75em) {
+            @content
+        }
+
+        ; //1200px
+    }
+
+    @if $breakpoint==big-desktop {
+        @media only screen and (min-width: 112.5em) {
+            @content
+        }
+
+        ; //1800
+    }
 }
