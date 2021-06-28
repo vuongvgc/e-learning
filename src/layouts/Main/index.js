@@ -1,10 +1,11 @@
+import React from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 export default function MainLayout(props) {
   return (
     <div>
       <Header />
-      <div>{props.children}</div>
+      <React.Fragment>{props.children}</React.Fragment>
       <Footer />
     </div>
   );
