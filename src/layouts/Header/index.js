@@ -1,4 +1,4 @@
-import {Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -22,7 +22,7 @@ export default function Header() {
         <div className="col-8 col-md-8 col-xl-7 col-lg-9  justify-items-around">
           <div className="header__left">
             <Link className="navbar-brand" to="/">
-            <img src="./img/logo-coral.svg" alt="Logo Udemy" />
+              <img src="./img/logo-coral.svg" alt="Logo Udemy" />
             </Link>
             <span className="header__categories">
               <i className="fa fa-th"></i>Categories
@@ -69,11 +69,11 @@ export default function Header() {
                 </Link>
               </li>
               <li className="nav-item udemy-btn-group">
-               <Link to="/signin">
-                <button className="udemy-btn-orange btn my-2 my-sm-0">
+                <Link to="/signin">
+                  <button className="udemy-btn-orange btn my-2 my-sm-0">
                     Sign up
                   </button>
-               </Link>
+                </Link>
               </li>
             </ul>
           </div>
