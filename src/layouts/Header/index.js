@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import SearchForm from "../../components/SearchForm";
 export default function Header() {
   return (
     <header>
@@ -28,18 +28,7 @@ export default function Header() {
               <i className="fa fa-th"></i>Categories
             </span>
             <form className="header__form">
-              <div className="input-group">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Search for anything"
-                />
-                <div className="input-group-append">
-                  <span className="input-group-text" id="basic-addon2">
-                    <i className="fa fa-search"></i>
-                  </span>
-                </div>
-              </div>
+              <SearchForm placeholder="Search for anything" />
             </form>
           </div>
         </div>

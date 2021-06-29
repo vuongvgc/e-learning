@@ -1,8 +1,8 @@
 import IntroBannerItem from "./IntroBannerItem";
 function IntroBanner() {
   return (
-    <section class="intro">
-      <div class="intro__content row justify-content-around">
+    <section className="intro">
+      <div className="intro__content row justify-content-around">
         <IntroBannerItem
           icon="fab fa-codepen"
           title="100,000 online courses"
