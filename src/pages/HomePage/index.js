@@ -4,6 +4,7 @@ import IntroBanner from "../../components/IntroBanner";
 import CoursesList from "../../components/CoursesList";
 import Services from "../../components/Services";
 import Students from "../../components/Students";
+import Banner from "../../components/Banner";
 export default function Homepage() {
   return (
     <React.Fragment>
@@ -12,6 +13,7 @@ export default function Homepage() {
       <CoursesList />
       <Services />
       <Students />
+      <Banner />
     </React.Fragment>
   );
 }
