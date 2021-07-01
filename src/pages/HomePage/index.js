@@ -7,6 +7,7 @@ import Students from "../../components/Students";
 import Banner from "../../components/Banner";
 import Categories from "../../components/Categories";
 import FeedBacks from "../../components/Feedbacks";
+import Companies from "../../components/Companies";
 export default function Homepage() {
   return (
     <React.Fragment>
@@ -18,6 +19,7 @@ export default function Homepage() {
       <Banner />
       <Categories />
       <FeedBacks />
+      <Companies />
     </React.Fragment>
   );
 }
