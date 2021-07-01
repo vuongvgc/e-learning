@@ -6,6 +6,7 @@ import Services from "../../components/Services";
 import Students from "../../components/Students";
 import Banner from "../../components/Banner";
 import Categories from "../../components/Categories";
+import FeedBacks from "../../components/Feedbacks";
 export default function Homepage() {
   return (
     <React.Fragment>
@@ -16,6 +17,7 @@ export default function Homepage() {
       <Students />
       <Banner />
       <Categories />
+      <FeedBacks />
     </React.Fragment>
   );
 }
