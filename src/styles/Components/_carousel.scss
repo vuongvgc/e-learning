@@ -1,0 +1,37 @@
+.udemy-carousel {
+    background-image: url('../../assets/img/cover.jpg');
+    height: 40rem;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+
+    .udemy-carousel__content {
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+
+        h2 {
+            @include styleText($fs-4, $fw-bold, $color-white-0);
+        }
+
+        p {
+            @include styleText($fs-2, $fw-normal, $color-white-0);
+        }
+
+        .udemy-carousel__form {
+            @include searchForm($color-gray-6);
+
+            input {
+                font-size: $fs-3;
+                padding: $pd-2 0;
+            }
+        }
+    }
+
+    @include respond(phone) {
+        .udemy-carousel__content {
+            left: 50%;
+        }
+    }
+}

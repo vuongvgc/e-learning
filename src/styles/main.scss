@@ -8,11 +8,23 @@
 @import './Base/nomalized';
 // Components
 @import './Components/buttons';
+@import './Components/carousel';
+@import './Components/intro';
+@import './Components/courses';
+@import './Components/services';
+@import './Components/students';
+@import './Components/banner';
+@import './Components/categories';
+@import './Components/feedback';
+@import './Components/companies';
+
 // Layouts
 @import './Layouts/mainLayout';
 @import './Layouts/authLayout';
 @import './Layouts/userLayout';
 @import './Layouts/adminLayout';
+@import './Layouts/header';
+@import './Layouts/footer';
 // Page
 @import './Pages/homePage';
 @import './Pages/courseDetails';

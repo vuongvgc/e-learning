@@ -1,0 +1,20 @@
+// button white 
+.udemy-btn-white {
+    @include styleText($fs-0, $fw-bold-1, $color-gray-4);
+    @include styleBtn($color-white-0, $color-gray-4, $border-radius, $pd-1, $pd-1);
+
+    &:hover {
+        @include hoverButton($color-white-0, $color-black-0, $color-black-0);
+
+    }
+}
+
+// button orange small 
+.udemy-btn-orange {
+    @include styleText($fs-0, $fw-bold-1, $color-white-0);
+    @include styleBtn($color-red-0, $color-red-0, $border-radius, $pd-1, $pd-1);
+
+    &:hover {
+        @include hoverButton($color-red-2, $color-red-2, $color-white-0);
+    }
+}

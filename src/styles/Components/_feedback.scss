@@ -1,0 +1,27 @@
+.feedback {
+    background-color: $color-gray-5;
+    padding-bottom: $pd-4;
+    height: 40rem;
+    h2 {
+        @include styleText($fs-3, $fw-bold, $color-black-0);
+        padding: $pd-3 0;
+    }
+    .feedback_item {
+        background-color: $color-white-0;
+        height: 30rem;
+        padding: $pd-4;
+        
+    }
+    .feedback__infor {
+        align-items: center;
+            img {
+                padding: $pd-2;
+                border-radius: 50%;
+                width: 100%;
+            }
+            p {
+                @include styleText($fs-2, $fw-bold,$color-black-0)
+            }
+    }
+    
+}

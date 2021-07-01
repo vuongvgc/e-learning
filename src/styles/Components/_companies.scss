@@ -1,0 +1,48 @@
+.companies {
+    background-color: $color-gray-5;
+    margin-bottom: $mg-3;
+    .companies__slogan {
+        display: block;
+        width: 30%;
+        margin: 0 auto;
+        padding: $pd-2;
+        text-align: center;
+        @include styleText($fs-1, $fw-normal, $color-gray-4)
+    }
+    .companies__partners {
+        align-items: center;
+        width: 75%;
+        margin: $mg-2 auto;
+        .companies__item {
+           padding: 0 1rem;
+           text-align: center;
+        }
+    }
+    .companies__teacher {
+        .companies__teacher-box {
+            .companies__text {
+                margin: $mg-2 auto;
+                text-align: center;
+                h2 {
+                    @include styleText($fs-2, $fw-bold,$color-black-0);
+                    padding: $pd-3 0;
+                }
+                p {
+                    height: 5rem;
+                    margin-bottom: $mg-2;
+
+                }
+            }
+            
+        }
+    }
+}
+.companies {
+    @include respond(tab-land){
+        .companies__partners {
+            width: 100%;
+            
+        }
+    }
+    
+}

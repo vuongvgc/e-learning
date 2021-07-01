@@ -1,0 +1,26 @@
+.services {
+    margin-bottom: $mg-3;
+    background-color: $color-white-cream;
+    padding: $pd-3;
+    .services__box {
+        flex-wrap: nowrap;
+        .service__item {
+        background-color: $color-white-0;
+        padding: $pd-2;
+        margin:0 $mg-1;
+        .service__icon {
+            padding: 0 $pd-2;
+        }
+        .service__text {
+            h3 {
+                @include styleText($fs-2, $fw-bold, $color-black-0);
+            }
+            p {
+                @include styleText($fs-6, $fw-normal, $color-gray-4);
+
+            }
+        }
+    }
+    }
+    
+}

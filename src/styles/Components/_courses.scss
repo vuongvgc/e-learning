@@ -1,0 +1,41 @@
+.courses {
+    padding: $pd-3 0;
+    margin-bottom: $mg-3;
+    .courses__intro {
+        background-color: $color-gray-5;
+        position: relative;
+        .courses__text {
+            @include centerTextBox;
+
+        }
+    }
+    .courses__carousel {
+        position: relative;
+        .courses__item {
+            @include courses__item();
+            
+        }
+    }
+    .courses__link {
+        border-bottom: 1px solid $color-gray-6;
+        height: 7rem;
+        .nav-item { 
+            height: 100%;
+            .nav-link {
+                background-color: $color-white-0;
+                color: $color-black-0;
+                padding: 0 $pd-1 $pd-1;
+                 
+            }  
+        }
+        
+    }
+    
+}
+.courses {
+    @include respond(phone){
+        .courses__intro {
+            display: none;
+        }
+    }
+}
