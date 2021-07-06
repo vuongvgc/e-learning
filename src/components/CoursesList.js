@@ -102,8 +102,8 @@ export default function CoursesList() {
               id="pills-business"
               role="tabpanel"
             >
-              <div class="row">
-                <div class="col-4">
+              <div class="multiple-courses">
+                <div>
                   <CourseItem
                     img="./img/kh1.jpg"
                     name="The Complete Foundation Stock Trading Course"
@@ -115,7 +115,7 @@ export default function CoursesList() {
                     priceDiscount="15.99"
                   />
                 </div>
-                <div class="col-4">
+                <div>
                   <CourseItem
                     img="./img/kh2.jpg"
                     name="The Complete Foundation Stock Trading Course"
@@ -127,9 +127,45 @@ export default function CoursesList() {
                     priceDiscount="19.99"
                   />
                 </div>
-                <div class="col-4">
+                <div>
                   <CourseItem
                     img="./img/kh3.jpg"
+                    name="The Complete Foundation Stock Trading Course"
+                    summary="Lorem, ipsum dolor"
+                    star={3}
+                    rating="4.0"
+                    numMember="57,931"
+                    price="200.00"
+                    priceDiscount="9.99"
+                  />
+                </div>
+                <div>
+                  <CourseItem
+                    img="./img/kh4.jpg"
+                    name="The Complete Foundation Stock Trading Course"
+                    summary="Lorem, ipsum dolor"
+                    star={3}
+                    rating="4.0"
+                    numMember="57,931"
+                    price="200.00"
+                    priceDiscount="9.99"
+                  />
+                </div>
+                <div>
+                  <CourseItem
+                    img="./img/kh5.jpg"
+                    name="The Complete Foundation Stock Trading Course"
+                    summary="Lorem, ipsum dolor"
+                    star={3}
+                    rating="4.0"
+                    numMember="57,931"
+                    price="200.00"
+                    priceDiscount="9.99"
+                  />
+                </div>
+                <div>
+                  <CourseItem
+                    img="./img/kh6.jpg"
                     name="The Complete Foundation Stock Trading Course"
                     summary="Lorem, ipsum dolor"
                     star={3}

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="container-fluid">
@@ -6,67 +6,67 @@ export default function Footer() {
         <div className="footer__nav-item col-3">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
             <li className="nav-item active__nav">
-              <Link className="nav-link" to="/">
+              <NavLink className="nav-link" to="/">
                 Udemy for Business
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item active__nav">
-              <Link className="nav-link" to="/">
+              <NavLink className="nav-link" to="/">
                 Teach on Udemy
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <NavLink className="nav-link" to="/">
                 Udemy app
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <NavLink className="nav-link" to="/">
                 About us
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
         <div className="footer__nav-item col-3">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <NavLink className="nav-link" to="/">
                 Contact us
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <NavLink className="nav-link" to="/">
                 Careers
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <NavLink className="nav-link" to="/">
                 Blog
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <NavLink className="nav-link" to="/">
                 Help and Support
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
         <div className="footer__nav-item col-3">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
             <li className="nav-item active">
-              <Link className="nav-link" to="/">
+              <NavLink className="nav-link" to="/">
                 Affiliate
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <NavLink className="nav-link" to="/">
                 Sitemap
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <NavLink className="nav-link" to="/">
                 Featured courses
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -98,19 +98,19 @@ export default function Footer() {
         <div className="col-6 col-md-4 footer__policy">
           <ul className="row">
             <li className="nav-item active__nav">
-              <Link className="nav-link" to="/">
+              <NavLink className="nav-link" to="/">
                 Terms
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item active__nav">
-              <Link className="nav-link" to="/">
+              <NavLink className="nav-link" to="/">
                 Privacy
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <NavLink className="nav-link" to="/">
                 Policy and Cookie Policy
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
